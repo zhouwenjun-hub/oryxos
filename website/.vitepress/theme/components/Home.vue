@@ -98,8 +98,7 @@ POST /api/v1/sandbox/whitelist/SHELL
     code: `❯ oryxos serve --port 8080
 
 /api/v1/**     REST API (unified envelope)
-/admin/        Web admin console
-/swagger-ui    OpenAPI docs`,
+/admin/        Web admin console`,
   },
 ])
 

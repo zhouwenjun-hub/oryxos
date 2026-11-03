@@ -408,8 +408,6 @@ Web Service 是 OryxOS 的对外完整门面，业务系统通过 REST API 接�
 
 **`GlobalExceptionHandler` 模块。** 统一异常处理，把异常转成标准 JSON 响应信封 `ApiResponse`（`code`、`message`、`data`、`timestamp`；成功与错误共用一个信封）。此信封第24节随白名单管理端点已建于 `oryxos-web`，26 节复用、不另建 ErrorBody。
 
-**OpenAPI 文档模块。** 通过 `springdoc-openapi` 自动生成 OpenAPI 3.0 文档，暴露在 `/swagger-ui`。
-
 ### 7.2 核心阶段 10 个端点
 
 **会话管理（4 个）：**

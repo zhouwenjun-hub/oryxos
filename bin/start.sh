@@ -55,7 +55,6 @@ for _ in $(seq 1 45); do
     echo "[OK] OryxOS 已就绪 (pid $PID)"
     echo "     REST:   http://localhost:$PORT/api/v1/health"
     echo "     管理台: http://localhost:$PORT/admin/"
-    echo "     文档:   http://localhost:$PORT/swagger-ui"
     echo "     日志:   $LOG   （bin/stop.sh 停止）"
     exit 0
   fi

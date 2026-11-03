@@ -231,17 +231,6 @@ management:
     resource-attributes:
       service.name: oryxos
 
-# OpenAPI / Swagger UI
-# 默认关闭：接口模型不向网络暴露。本地调试可临时开启：
-#   --springdoc.api-docs.enabled=true --springdoc.swagger-ui.enabled=true
-springdoc:
-  api-docs:
-    enabled: false
-    path: /v3/api-docs
-  swagger-ui:
-    enabled: false
-    path: /swagger-ui.html
-
 # Log levels (formatting/appenders live in logback-spring.xml)
 logging:
   level:

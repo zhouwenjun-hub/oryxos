@@ -93,7 +93,7 @@ Provider 和通知渠道不再是静态配置——两者都存储在 SQLite 中
 | `oryxos-memory` | 记忆系统：`MemoryService` 门面、`LongTermMemory`（读写每个 Agent 的 `MEMORY.md`）、`MemoryTools`（`save_memory`、`recall_memory`） |
 | `oryxos-tool` | 工具体系：内置工具（`FileTools`、`ShellTools`、`HttpTools`、`NotifyTools`）、`McpClientService`、`McpToolAdapter`、`ToolRegistry`、`SandboxChecker` |
 | `oryxos-channel-cli` | CLI 渠道：`CliChannel`、`oryxos chat` 命令实现 |
-| `oryxos-web` | REST API：十个 `ApiController`、`GlobalExceptionHandler`、统一响应信封、OpenAPI 规范，以及通过 `/admin/` 提供的 Vue 管理台 |
+| `oryxos-web` | REST API：十个 `ApiController`、`GlobalExceptionHandler`、统一响应信封，以及通过 `/admin/` 提供的 Vue 管理台 |
 | `oryxos-storage` | 持久化：SQLite via Spring Data JPA——会话、工具调用、LLM 调用、定时任务、任务执行、记忆条目、通知渠道、Provider 等仓库 |
 | `oryxos-cli` | CLI 入口：Picocli 主入口、12 个子命令、`ConfigLoader`（凭证和配置校验） |
 | `oryxos-boot` | Spring Boot 启动模块：主类、自动配置、依赖聚合 |

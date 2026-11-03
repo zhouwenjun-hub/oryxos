@@ -12,7 +12,7 @@
 
     <artifactId>oryxos-web</artifactId>
     <name>OryxOS Web</name>
-    <description>Web service: REST API controllers, GlobalExceptionHandler, OpenAPI</description>
+    <description>Web service: REST API controllers, GlobalExceptionHandler</description>
 
     <properties>
         <!-- 前端构建默认随 mvn 触发；快速纯 Java 构建可 -Dfrontend.skip=true 跳过 -->
@@ -60,11 +60,6 @@
             <groupId>com.nimbusds</groupId>
             <artifactId>nimbus-jose-jwt</artifactId>
             <version>10.10</version>
-        </dependency>
-        <!-- OpenAPI / Swagger UI -->
-        <dependency>
-            <groupId>org.springdoc</groupId>
-            <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
         </dependency>
         <dependency>
             <groupId>com.github.spotbugs</groupId>

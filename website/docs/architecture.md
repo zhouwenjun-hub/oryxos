@@ -92,7 +92,7 @@ A Vue 3 + Vite single-page app is served at `/admin/`, styled to match the marke
 | `oryxos-memory` | Memory: `MemoryService` facade, `LongTermMemory` (reads/writes per-agent `MEMORY.md`), `MemoryTools` (`save_memory`, `recall_memory`) |
 | `oryxos-tool` | Tool system: built-in tools (`FileTools`, `ShellTools`, `HttpTools`, `NotifyTools`), `McpClientService`, `McpToolAdapter`, `ToolRegistry`, `SandboxChecker` |
 | `oryxos-channel-cli` | CLI channel: `CliChannel`, `oryxos chat` command implementation |
-| `oryxos-web` | REST API: ten `ApiController` classes, `GlobalExceptionHandler`, the unified response envelope, OpenAPI spec, and the Vue admin console served at `/admin/` |
+| `oryxos-web` | REST API: ten `ApiController` classes, `GlobalExceptionHandler`, the unified response envelope, and the Vue admin console served at `/admin/` |
 | `oryxos-storage` | Persistence: SQLite via Spring Data JPA — session, tool-invocation, LLM-call, scheduled-task, task-execution, memory-entry, notify-channel, and provider repositories |
 | `oryxos-cli` | CLI entry point: Picocli main, 12 subcommands, `ConfigLoader` for credentials and config validation |
 | `oryxos-boot` | Spring Boot bootstrap: main class, auto-configuration, dependency aggregation |

@@ -7,7 +7,7 @@
 # 本 .example 不含任何真实凭证，随仓库提交，作为部署参考。
 #
 # 本文件铺开常用的「运行期默认」供部署时按机器调整；框架内部管道
-# （spring.autoconfigure.exclude、jpa 方言、sql.init、management、springdoc）
+# （spring.autoconfigure.exclude、jpa 方言、sql.init、management）
 # 不在此重复，继续从 jar 内置 application.yml 继承，避免与 jar 漂移。
 # 注意：列表类键（file/shell/http、oryxos.providers）Spring 是整体替换不是合并——
 # 在此覆盖时须与 jar 内置 application.yml 的对应列表保持一致，别只改一半造成两份分歧。

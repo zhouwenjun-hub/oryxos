@@ -160,7 +160,7 @@ bin/start.sh                     # defaults to port 8080; or: bin/start.sh 9000
 bin/stop.sh                      # stop
 ```
 
-`start.sh` launches a single process that serves **both** the REST API and the Web Manager on the same port, waits for the health check to pass, then prints the URLs (`/api/v1/health`, `/admin/`, `/swagger-ui`). Logs stream to `logs/oryxos.log`. On the first run it creates `config/application.yml` from the template and asks you to fill in the key.
+`start.sh` launches a single process that serves **both** the REST API and the Web Manager on the same port, waits for the health check to pass, then prints the URLs (`/api/v1/health`, `/admin/`). Logs stream to `logs/oryxos.log`. On the first run it creates `config/application.yml` from the template and asks you to fill in the key.
 
 ### CLI alternative
 
@@ -195,7 +195,6 @@ The container boots keyless (configure providers in the web console afterwards) 
 | --- | --- |
 | `http://localhost:8080/api/v1/**` | REST API (see below) |
 | `http://localhost:8080/admin/` | **Web Manager** — Vue 3 console |
-| `http://localhost:8080/swagger-ui` | OpenAPI docs |
 
 The Web Manager is a Vue 3 + Vite console (same stack and dark-orange theme as the site) with pages for **agent management** (create, one-sentence LLM generation, file editor, per-agent session and memory views), **provider and notify-channel CRUD**, **scheduled tasks**, **sessions, tools, sandbox whitelist**, and a **workspace file browser**. It is built to `oryxos-web/src/main/resources/static/admin/` and served by Spring at `/admin`, so the fat JAR ships it — no separate frontend process.
 
